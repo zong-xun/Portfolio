@@ -1,0 +1,18 @@
+body,html{
+    background: #000;
+    height: 100%;
+}
+
+.banner{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.5s;
+    &__height0{
+        height: 0px;
+        transition: all 0.5s;
+    }
+    &__flexd{
+        position: fixed;
+    }
+}
