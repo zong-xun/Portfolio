@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": ";AEAA;;gBAEgB;AAKhB;;gBAEgB;AAGhB;;mBAEmB;AFVd,AAAD,YAAK,CAAA;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAEhB;;AAGQ,AAAD,0BAAM,CAAA;EACF,KAAK,EAAC,KAAK;EACX,MAAM,EAAE,KAAK;EACb,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,aAAa;EAClC,gBAAgB,EAAE,8BAA8B;EAChD,MAAM,EAAC,MAAM;CAChB",
     "sources": [
-        "../scss/page/index.scss"
+        "../scss/page/index.scss",
+        "../scss/mixins/_mixins.scss",
+        "../scss/import/_vars.scss"
     ],
     "names": [],
     "file": "index.css"

@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+/*------------*\
+    平台主色調
+\*------------*/
+/*------------*\
+    常用顏色
+\*------------*/
+/*---------------*\
+    螢幕尺寸斷點
+\*---------------*/
+.content_box {
+  width: 100%;
+  height: 100vh;
+}
+
+.content_pageone_left_icon {
+  width: 300px;
+  height: 268px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../image/home_left.svg);
+  margin: 0 auto;
+}
+/*# sourceMappingURL=index.css.map */
