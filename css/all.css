@@ -2,22 +2,4 @@ body, html {
   background: #000;
   height: 100%;
 }
-
-.banner {
-  height: 70px;
-  background-color: #fff;
-  position: relative;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.banner__height0 {
-  height: 0px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.banner__flexd {
-  position: fixed;
-}
 /*# sourceMappingURL=all.css.map */
