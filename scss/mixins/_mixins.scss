@@ -1,0 +1,24 @@
+
+
+// RWD 響應式
+@mixin sm-media() {
+    @media (min-width: $media-xl) {
+        @content;
+    }
+}
+@mixin md-media() {
+    @media (min-width: $md-media) {
+        @content;
+    }
+}
+@mixin lg-media() {
+    @media (min-width: $lg-media) {
+        @content;
+    }
+}
+@mixin xl-media() {
+    @media (min-width: $xl-media) {
+        @content;
+    }
+}
+

@@ -1,4 +1,6 @@
-body,html{
-    background: #000;
-    height: 100%;
-}
+@import"mixins/mixins";
+@import"import/vars";
+@import"import/base";
+@import"import/sare";
+
+@import"import/reset";
