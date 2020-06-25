@@ -12,6 +12,10 @@ body {
   font-family: 'Microsoft JhengHei';
 }
 
+body, html {
+  height: 100%;
+}
+
 /*------------*\
     navbox
 \*------------*/

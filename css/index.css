@@ -10,15 +10,40 @@
 \*---------------*/
 .content_box {
   width: 100%;
-  height: 100vh;
+  height: calc(100% - 76px);
+  padding-top: 44px;
 }
 
-.content_pageone_left_icon {
-  width: 300px;
-  height: 268px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../image/home_left.svg");
+.content_pageone_icon_home-left {
   margin: 0 auto;
+  width: 266px;
+  height: 217px;
+}
+
+.content_pageone_txtbox {
+  margin: 0 auto;
+  margin-top: 37px;
+  width: 301px;
+  height: 225px;
+  position: relative;
+}
+
+.content_pageone_txtbox_word {
+  width: 123px;
+  font-size: 41px;
+  color: #34373D;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.content_pageone_txtbox_icon {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
+.content_pageone_txtbox_icon_home-right {
+  width: 143px;
+  height: 129px;
 }
 /*# sourceMappingURL=index.css.map */
