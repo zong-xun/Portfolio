@@ -19,6 +19,13 @@ body, html {
 /*------------*\
     navbox
 \*------------*/
+.navbox_hamburger div {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .navbox_box {
   width: 100%;
   height: 76px;
@@ -51,6 +58,29 @@ body, html {
   height: 3px;
   background-color: #707070;
   border-radius: 5px;
+}
+
+.navbox_hamburger_action div:first-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbox_hamburger_action div:nth-child(2) {
+  top: -25px;
+  opacity: 0;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+}
+
+.navbox_hamburger_action div:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 html, body, div, span, applet, object, iframe,

@@ -5,6 +5,11 @@ body,html{
 /*------------*\
     navbox
 \*------------*/
+%hamnuger-line-post{
+    position: relative;
+    top: 0;
+    transition: all 0.5s;
+}
 .navbox{
     &_box{
         width: 100%;
@@ -29,7 +34,27 @@ body,html{
             // padding: 1.5px 0;
             background-color: $color-gray;
             border-radius: 5px;
-            
+            @extend %hamnuger-line-post
         }
+        &_action{
+            div{
+                &:first-child{
+                    transform: rotate(-45deg);
+                    top:10px;
+                    transition: all 0.5s;
+                }
+                &:nth-child(2){
+                    top: -25px;
+                    opacity: 0;
+                    transform: all 0.5s;
+                }
+                &:last-child{
+                    transform: rotate(45deg);
+                    top:-10px;
+                    transition: all 0.5s;
+                }
+            }
+            }
+
     }
 }

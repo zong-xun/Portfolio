@@ -14,7 +14,7 @@
         <div class="navbox_log">
             <img src="../image/logo.svg" alt="">
         </div>
-        <div class="navbox_hamburger">
+        <div class="navbox_hamburger js-hamburger">
             <div></div>
             <div></div>
             <div></div>
@@ -36,6 +36,16 @@
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
+        $(function(){
+            $('.js-hamburger').on('click',function(){
+                let $that = $(this);
+                if($that.hasClass('navbox_hamburger_action')){
+                    $that.removeClass('navbox_hamburger_action');
+                }else{
+                    $that.addClass('navbox_hamburger_action');
+                }
+            })
+        })
     </script>
 </body>
 </html>
