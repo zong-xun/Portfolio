@@ -55,6 +55,6 @@
   position: absolute;
   bottom: 25px;
   margin: 0 auto;
-  right: 46%;
+  right: calc((100% - 30px) / 2);
 }
 /*# sourceMappingURL=index.css.map */
