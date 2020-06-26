@@ -27,7 +27,6 @@
   margin: 0 auto;
   margin-top: 37px;
   width: 301px;
-  height: 225px;
   position: relative;
 }
 
@@ -41,8 +40,8 @@
 
 .content_pageone_txtbox_icon {
   position: absolute;
-  bottom: 0;
-  right: 0px;
+  bottom: -50px;
+  right: 0;
 }
 
 .content_pageone_txtbox_icon_home-right {
