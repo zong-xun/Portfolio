@@ -40,6 +40,16 @@
                 }
             }
         }
+        &_down{
+            width: 30px;
+            height: 30px;
+            background-image: url(../image/page_down.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 25px;
+            margin: 0 auto;
+            right: 172px;
+        }
         // &_right{
         //     // &_icon{
 
