@@ -4,11 +4,12 @@
 .content{
     &_box{
         width: 100%;
-        height: calc(100% - 76px);
-        padding-top: 44px;
+        // height: 100%;
         // background-color: #000;
     }
     &_pageone{
+        height: calc(100vh - 75px);
+        padding-top: 44px;
         &_icon{
             &_home-left{
                 margin: 0 auto;
@@ -55,5 +56,27 @@
 
         //     // }
         // }
+    }
+    &_pagetwo{
+        height: 100vh;
+        margin: 0 14px;
+        border-top: 1px solid $color-border;
+        &_txtbox{
+            margin:50px 0 20px 0;
+            &_word{
+                font-size: 48px;
+                color:$color-txt;
+                line-height: 1.4;
+                font-weight: bold;
+            }
+        }
+        &_img{
+            width: 315px;
+            height: 500px;
+            margin: 0 auto;
+            background-image: url(../../image/mobile_thereis.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
     }
 }
