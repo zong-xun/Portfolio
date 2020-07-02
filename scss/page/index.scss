@@ -1,6 +1,10 @@
 @import"../mixins/mixins";
 @import"../import/vars";
-
+%pageStyle{
+    height: 100vh;
+    margin: 0 14px;
+    border-top: 1px solid $color-border;
+}
 .content{
     &_box{
         width: 100%;
@@ -63,9 +67,7 @@
         // }
     }
     &_pagetwo{
-        height: 100vh;
-        margin: 0 14px;
-        border-top: 1px solid $color-border;
+        @extend %pageStyle;
         &_txtbox{
             margin:50px 0 20px 0;
             &_word{
@@ -82,6 +84,23 @@
             background-image: url(../image/mobile_thereis.svg);
             background-repeat: no-repeat;
             background-position: center center;
+        }
+    }
+    &_pagethree{
+        flex-direction: column;
+        @extend %pageStyle;
+        &_imgbox{
+            width: 6.5625rem;//105px
+            height: 8.5625rem;//137px
+            text-align: center;
+            img{
+                width: 6.5625rem;//105
+                height: 6.5625rem;//105
+                margin-bottom: .875rem;//14px
+            }
+            &_txt{
+                font-size: 13px;
+            }
         }
     }
 }
