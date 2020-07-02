@@ -9,8 +9,12 @@
     }
     &_pageone{
         height: calc(100vh - 65px);
-        padding-top: 2.3125rem;
+        // padding-top: 2.3125rem;
         position: relative;
+        &_box{
+            position: relative;
+            top: calc((100vh - 29.0625rem ) / 2);
+        }
         &_icon{
             &_home-left{
                 margin: 0 auto;
@@ -21,7 +25,7 @@
         }
         &_txtbox{
             margin: 0 auto;
-            margin-top: 2.3125rem;//37px
+            margin-top: 1.5rem;
             width: 16.875rem;//270px
             // height: 225px;
             position: relative;
@@ -72,8 +76,8 @@
             }
         }
         &_img{
-            width: 16.875rem;
-            height: 22.5625rem;
+            width: 100%;
+            height: calc(100% - 8.5625rem);
             margin: 0 auto;
             background-image: url(../image/mobile_thereis.svg);
             background-repeat: no-repeat;

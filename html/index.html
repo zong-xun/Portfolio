@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作品集</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <!-- content1 -->
     <div class="content_box">
@@ -22,49 +25,55 @@
                 <div></div>
             </div>
         </nav>
-        <div  class="content_pageone">
-            <div>
-                <img class="content_pageone_icon_home-left d-flex" src="../image/home_left.svg" alt="">
-            </div>
-            <div class="content_pageone_txtbox">
-                <div class="content_pageone_txtbox_word">
-                    <span>Jing- Fen's Profile</span>
+        <div class="content_pageone">
+            <div class="content_pageone_box">
+                <div>
+                    <img class="content_pageone_icon_home-left d-flex" src="../image/home_left.svg" alt="">
                 </div>
-                <div class="content_pageone_txtbox_icon">
-                    <img class="content_pageone_txtbox_icon_home-right" src="../image/home_right.svg" alt="">
+                <div class="content_pageone_txtbox">
+                    <div class="content_pageone_txtbox_word">
+                        <span>Jing- Fen's Profile</span>
+                    </div>
+                    <div class="content_pageone_txtbox_icon">
+                        <img class="content_pageone_txtbox_icon_home-right" src="../image/home_right.svg" alt="">
+                    </div>
                 </div>
             </div>
+
             <div id="page-down" class="content_pageone_down">
             </div>
         </div>
-        <div id="first-block"  class="content_pagetwo">
+        <div id="first-block" class="content_pagetwo">
             <div class="content_pagetwo_txtbox">
                 <div class="content_pagetwo_txtbox_word">
                     <span>THERE IS</span>
                 </div>
             </div>
-            <div class="content_pagetwo_img"></div>
+            <div class="content_pagetwo_img">
+                <!-- <img src="../image/mobile_thereis.svg" alt=""> -->
+            </div>
         </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
-        $(function(){
+        $(function () {
 
-            $('.js-hamburger').on('click',function(){
+            $('.js-hamburger').on('click', function () {
                 let $that = $(this);
-                if($that.hasClass('navbox_hamburger_action')){
+                if ($that.hasClass('navbox_hamburger_action')) {
                     $that.removeClass('navbox_hamburger_action');
-                }else{
+                } else {
                     $that.addClass('navbox_hamburger_action');
                 }
             });
 
-            $('#page-down').click(function(){ 
-                $('html,body').animate({scrollTop:$('#first-block').offset().top}, 800); 
-            });  
+            $('#page-down').click(function () {
+                $('html,body').animate({ scrollTop: $('#first-block').offset().top }, 800);
+            });
 
 
         })
     </script>
 </body>
+
 </html>
