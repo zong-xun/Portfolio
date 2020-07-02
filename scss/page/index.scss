@@ -17,7 +17,8 @@
         position: relative;
         &_box{
             position: relative;
-            top: calc(((100vh - 29.0625rem ) / 2) - (((100vh - 29.0625rem ) / 2) - 2.3125rem));
+            // top: calc(((100vh - 29.0625rem ) / 2) - (((100vh - 29.0625rem ) / 2) - 2.3125rem));
+            top: calc(((100vh - 29.0625rem ) / 2));
         }
         &_icon{
             &_home-left{
@@ -111,19 +112,21 @@
         &_img{
             &_left{
                 img{
-                    width: 7.625rem;//122px
-                    height: 6.375rem;//102px
+                    width: 8.625rem;//122px
+                    height: 7.375rem;//102px
+                    margin-left: 18px;
                 }
             }
             &_right{
                 img{
-                    width: 5.9375rem;//95px
-                    height: 5.3125rem;//85px
+                    width: 6.9375rem;//95px
+                    height: 6.3125rem;//85px
+                    margin-right: 18px;
                 }
             }
             &_centerbox{
                 // width: 18.4375rem;//295px
-                height: 11.25rem;//180px
+                height: 12.25rem;//180px
                 background-color: $color-gray;
             }
         }

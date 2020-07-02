@@ -26,7 +26,7 @@
 
 .content_pageone_box {
   position: relative;
-  top: calc(((100vh - 29.0625rem ) / 2) - (((100vh - 29.0625rem ) / 2) - 2.3125rem));
+  top: calc(((100vh - 29.0625rem ) / 2));
 }
 
 .content_pageone_icon_home-left {
@@ -125,17 +125,19 @@
 }
 
 .content_pagefour_img_left img {
-  width: 7.625rem;
-  height: 6.375rem;
+  width: 8.625rem;
+  height: 7.375rem;
+  margin-left: 18px;
 }
 
 .content_pagefour_img_right img {
-  width: 5.9375rem;
-  height: 5.3125rem;
+  width: 6.9375rem;
+  height: 6.3125rem;
+  margin-right: 18px;
 }
 
 .content_pagefour_img_centerbox {
-  height: 11.25rem;
+  height: 12.25rem;
   background-color: #707070;
 }
 /*# sourceMappingURL=index.css.map */
