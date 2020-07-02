@@ -10,29 +10,31 @@
 \*---------------*/
 .content_box {
   width: 100%;
+  height: 100%;
 }
 
 .content_pageone {
-  height: calc(100vh - 75px);
-  padding-top: 44px;
+  height: calc(100vh - 65px);
+  padding-top: 2.3125rem;
+  position: relative;
 }
 
 .content_pageone_icon_home-left {
   margin: 0 auto;
-  width: 266px;
-  height: 217px;
+  width: 14.125rem;
+  height: 11.5625rem;
 }
 
 .content_pageone_txtbox {
   margin: 0 auto;
-  margin-top: 37px;
-  width: 301px;
+  margin-top: 2.3125rem;
+  width: 16.875rem;
   position: relative;
 }
 
 .content_pageone_txtbox_word {
   width: 123px;
-  font-size: 41px;
+  font-size: 2.1875rem;
   color: #34373D;
   line-height: 1.4;
   font-weight: bold;
@@ -40,13 +42,13 @@
 
 .content_pageone_txtbox_icon {
   position: absolute;
-  bottom: -50px;
+  bottom: -25%;
   right: 0;
 }
 
 .content_pageone_txtbox_icon_home-right {
-  width: 143px;
-  height: 129px;
+  width: 7.625rem;
+  height: 110px;
 }
 
 .content_pageone_down {
@@ -78,8 +80,8 @@
 }
 
 .content_pagetwo_img {
-  width: 315px;
-  height: 500px;
+  width: 16.875rem;
+  height: 22.5625rem;
   margin: 0 auto;
   background-image: url(../image/mobile_thereis.svg);
   background-repeat: no-repeat;

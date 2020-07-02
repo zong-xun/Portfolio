@@ -4,40 +4,41 @@
 .content{
     &_box{
         width: 100%;
-        // height: 100%;
+        height: 100%;
         // background-color: #000;
     }
     &_pageone{
-        height: calc(100vh - 75px);
-        padding-top: 44px;
+        height: calc(100vh - 65px);
+        padding-top: 2.3125rem;
+        position: relative;
         &_icon{
             &_home-left{
                 margin: 0 auto;
                 // margin-top: 44px;
-                width: 266px;
-                height: 217px;
+                width: 14.125rem;
+                height: 11.5625rem;
             }
         }
         &_txtbox{
             margin: 0 auto;
-            margin-top: 37px;
-            width: 301px;
+            margin-top: 2.3125rem;//37px
+            width: 16.875rem;//270px
             // height: 225px;
             position: relative;
             &_word{
                 width: 123px;
-                font-size: 41px;
+                font-size: 2.1875rem;
                 color:$color-txt;
                 line-height: 1.4;
                 font-weight: bold;
             }
             &_icon{
                 position: absolute;
-                bottom: -50px;
+                bottom: -25%;
                 right: 0;
                 &_home-right{
-                    width: 143px;
-                    height: 129px;
+                    width: 7.625rem;
+                    height: 110px;
                 }
             }
         }
@@ -71,8 +72,8 @@
             }
         }
         &_img{
-            width: 315px;
-            height: 500px;
+            width: 16.875rem;
+            height: 22.5625rem;
             margin: 0 auto;
             background-image: url(../image/mobile_thereis.svg);
             background-repeat: no-repeat;
