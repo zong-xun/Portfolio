@@ -8,7 +8,7 @@
 /*---------------*\
     螢幕尺寸斷點
 \*---------------*/
-.content_pagetwo, .content_pagethree {
+.content_pagetwo, .content_pagethree, .content_pagefour {
   height: 100vh;
   margin: 0 14px;
   border-top: 1px solid #34373D;
@@ -113,5 +113,29 @@
 
 .content_pagethree_imgbox_txt {
   font-size: 13px;
+  font-weight: bold;
+}
+
+.content_pagefour {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content_pagefour_img_left img {
+  width: 7.625rem;
+  height: 6.375rem;
+}
+
+.content_pagefour_img_right img {
+  width: 5.9375rem;
+  height: 5.3125rem;
+}
+
+.content_pagefour_img_centerbox {
+  height: 11.25rem;
+  background-color: #707070;
 }
 /*# sourceMappingURL=index.css.map */

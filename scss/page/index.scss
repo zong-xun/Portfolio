@@ -100,6 +100,31 @@
             }
             &_txt{
                 font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+    &_pagefour{
+        @extend %pageStyle;
+        position: relative;
+        flex-direction: column;
+        &_img{
+            &_left{
+                img{
+                    width: 7.625rem;//122px
+                    height: 6.375rem;//102px
+                }
+            }
+            &_right{
+                img{
+                    width: 5.9375rem;//95px
+                    height: 5.3125rem;//85px
+                }
+            }
+            &_centerbox{
+                // width: 18.4375rem;//295px
+                height: 11.25rem;//180px
+                background-color: $color-gray;
             }
         }
     }
