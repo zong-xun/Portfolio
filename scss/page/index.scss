@@ -167,6 +167,7 @@
             &:hover{
                 background-color: $color-btn-hover;
                 color: #ffffff;
+                border: 1px solid $color-btn-hover;
             }
         }
     }
