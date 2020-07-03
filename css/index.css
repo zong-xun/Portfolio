@@ -8,7 +8,7 @@
 /*---------------*\
     螢幕尺寸斷點
 \*---------------*/
-.content_pagetwo, .content_pagethree, .content_pagefour {
+.content_pagetwo, .content_pagethree, .content_pagefour, .content_pagefive {
   height: 100vh;
   margin: 0 14px;
   border-top: 1px solid #34373D;
@@ -139,5 +139,52 @@
 .content_pagefour_img_centerbox {
   height: 12.25rem;
   background-color: #707070;
+}
+
+.content_pagefive {
+  position: relative;
+}
+
+.content_pagefive_txt {
+  font-size: 2.5rem;
+  width: 100%;
+  position: absolute;
+  top: 34px;
+}
+
+.content_pagefive_btn {
+  font-size: 1.4375rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #34373D;
+  color: #34373D;
+  min-width: 11.8125rem;
+  min-height: 3.3125rem;
+  max-width: 11.8125rem;
+  max-height: 3.3125rem;
+  border-radius: 2.75rem;
+}
+
+.content_pagefive_btn_box {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content_pagefive_btn_box button {
+  outline: none;
+}
+
+.content_pagefive_btn:first-child {
+  margin-bottom: 3.1875rem;
+  background-color: #34373D;
+  color: #ffffff;
+}
+
+.content_pagefive_btn:hover {
+  background-color: #999999;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */

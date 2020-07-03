@@ -131,4 +131,42 @@
             }
         }
     }
+    &_pagefive{
+        @extend %pageStyle;
+        position: relative;
+        &_txt{
+            font-size: 2.5rem;
+            width: 100%;
+            position: absolute;
+            top: 34px;
+        }
+        &_btn{
+            &_box{
+                width: 100%;
+                flex-direction: column;
+                button{
+                    outline: none;
+                }
+            }
+            font-size: 1.4375rem;//23px
+            font-weight: bold;
+            background-color: $color-btn-white;
+            border: 1px solid $color-border;
+            color: $color-txt;
+            min-width: 11.8125rem;
+            min-height: 3.3125rem;
+            max-width: 11.8125rem;
+            max-height: 3.3125rem;
+            border-radius: 2.75rem;
+            &:first-child{
+                margin-bottom: 3.1875rem;//51px
+                background-color: $color-txt;
+                color: #ffffff;
+            }
+            &:hover{
+                background-color: $color-btn-hover;
+                color: #ffffff;
+            }
+        }
+    }
 }
