@@ -160,7 +160,7 @@
   color: #34373D;
   min-width: 11.8125rem;
   min-height: 3.3125rem;
-  max-width: 11.8125rem;
+  width: calc(100vw - 102px);
   max-height: 3.3125rem;
   border-radius: 2.75rem;
 }

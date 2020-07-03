@@ -155,7 +155,8 @@
             color: $color-txt;
             min-width: 11.8125rem;
             min-height: 3.3125rem;
-            max-width: 11.8125rem;
+            width: calc(100vw - 102px);;
+            // max-width: 11.8125rem;
             max-height: 3.3125rem;
             border-radius: 2.75rem;
             &:first-child{
