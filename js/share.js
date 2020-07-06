@@ -20,9 +20,9 @@ $(function () {
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
-            document.addEventListener("touchmove", function(event) {
-                event.preventDefault() //不產生作用
-            }, {passive: true});
+            document.body.addEventListener('touchmove', function(event) {
+                event.preventDefault();
+            }, false); 
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
@@ -37,5 +37,8 @@ $(function () {
     $('#page-down').click(function () {
         $('html,body').animate({ scrollTop: $('#first-block').offset().top }, 800);
     });
-
+    document.addEventListener("touchmove", function(event) {
+        // event.preventDefault() //不產生作用
+        console.log(1111)
+    }, {passive: false});
 })
