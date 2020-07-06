@@ -29,10 +29,13 @@ $(function () {
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
-                $('.js-navbox_hidden').addClass('d-none');
+                $('.navbox_menu').addClass('d-none');
                 $navboxId.removeAttr("style");
             });
             $('.navbox_menu').animate({opacity:0},400);
+            $('.content_box').on('touchmove', function(event) {
+                event.returnValue = true;
+            });
             document.documentElement.style.overflowY = 'scroll';
         }
     });
