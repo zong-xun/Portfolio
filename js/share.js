@@ -29,18 +29,19 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
-            
-            $(".js-navbox_hidden").on(' touchstart',function(){    
-                $(".js-navbox_hidden").on('touchmove',function(event) {    
-                    event.preventDefault();     
-                }, false);
-            });
+
+            // $(".js-navbox_hidden").on(' touchstart',function(){    
+            //     $(".js-navbox_hidden").on('touchmove',function(event) {    
+            //         event.preventDefault();     
+            //     }, false);
+            // });
             // document.body.addEventListener('touchmove', function(event) {
             //     event.preventDefault();
             // }, true); 
-            // $('.content_box').on('touchmove', function(event) {
-            //     event.preventDefault();
-            // });
+            $('.content_box').on('touchmove', function(event) {
+                $('aa').text('222');
+                event.preventDefault();
+            });
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
@@ -49,12 +50,12 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             });
             $('.navbox_menu').animate({opacity:0},400);
 
-            $(".js-navbox_hidden").on(' touchend',function(){    
-                $(".js-navbox_hidden").unbind('touchmove');
-            });
-            // $('.content_box').on('touchmove', function(event) {
-            //     event.returnValue = true;
+            // $(".js-navbox_hidden").on(' touchend',function(){    
+            //     $(".js-navbox_hidden").unbind('touchmove');
             // });
+            $('.content_box').on('touchmove', function(event) {
+                $('aa').text('111');
+            });
             document.documentElement.style.overflowY = 'scroll';
         }
     });
