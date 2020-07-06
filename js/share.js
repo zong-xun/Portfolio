@@ -11,6 +11,15 @@ $(function () {
 
     });
 
+    const handler = (e)=>{
+        e.preventDefault();
+    }
+// 防止下拉 
+touchmove= () => { document.getElementById('box').addEventListener('touchmove', handler, false)  }
+// 移除监听，恢复下拉 
+untouchmove = () => { document.getElementById('box').removeEventListener('touchmove', handler, false)  }
+
+
     //控制menu
     $('.js-hamburger').on('click', function () {
         let $navboxId = $('#navboxId');
@@ -20,12 +29,13 @@ $(function () {
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
+            touchmove();
             // document.body.addEventListener('touchmove', function(event) {
             //     event.preventDefault();
             // }, true); 
-            $('.content_box').on('touchmove', function(event) {
-                event.preventDefault();
-            });
+            // $('.content_box').on('touchmove', function(event) {
+            //     event.preventDefault();
+            // });
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
@@ -33,9 +43,10 @@ $(function () {
                 $navboxId.removeAttr("style");
             });
             $('.navbox_menu').animate({opacity:0},400);
-            $('.content_box').on('touchmove', function(event) {
-                event.returnValue = true;
-            });
+            untouchmove();
+            // $('.content_box').on('touchmove', function(event) {
+            //     event.returnValue = true;
+            // });
             document.documentElement.style.overflowY = 'scroll';
         }
     });
