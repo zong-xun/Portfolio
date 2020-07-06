@@ -38,7 +38,7 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             // document.body.addEventListener('touchmove', function(event) {
             //     event.preventDefault();
             // }, true); 
-            $('.navbox_menu').on('touchmove', function(event) {
+            $('#navboxId').on('touchmove', function(event) {
                 console.log(event)
                 $('.aa').text('222');
                 event.preventDefault();
@@ -54,7 +54,7 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             // $(".js-navbox_hidden").on(' touchend',function(){    
             //     $(".js-navbox_hidden").unbind('touchmove');
             // });
-            $('.navbox_menu').on('touchmove', function(event) {
+            $('#navboxId').on('touchmove', function(event) {
                 $('.aa').text('111');
             });
             document.documentElement.style.overflowY = 'scroll';
