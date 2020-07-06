@@ -15,9 +15,9 @@ $(function () {
         e.preventDefault();
     }
 // 防止下拉 
-touchmove= () => { document.getElementById('box').addEventListener('touchmove', handler, false)  }
+touchmove= () => { document.getElementsByClassName('content_box').addEventListener('touchmove', handler, false)  }
 // 移除监听，恢复下拉 
-untouchmove = () => { document.getElementById('box').removeEventListener('touchmove', handler, false)  }
+untouchmove = () => { document.getElementsByClassName('content_box').removeEventListener('touchmove', handler, false)  }
 
 
     //控制menu
