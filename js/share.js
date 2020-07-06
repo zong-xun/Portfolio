@@ -39,7 +39,7 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             //     event.preventDefault();
             // }, true); 
             $('.content_box').on('touchmove', function(event) {
-                $('aa').text('222');
+                $('.aa').text('222');
                 event.preventDefault();
             });
             document.documentElement.style.overflowY = 'hidden'; 
@@ -54,7 +54,7 @@ untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').remove
             //     $(".js-navbox_hidden").unbind('touchmove');
             // });
             $('.content_box').on('touchmove', function(event) {
-                $('aa').text('111');
+                $('.aa').text('111');
             });
             document.documentElement.style.overflowY = 'scroll';
         }
