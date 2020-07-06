@@ -11,17 +11,22 @@ $(function () {
 
     });
 
+    //控制menu
     $('.js-hamburger').on('click', function () {
         let $navboxId = $('#navboxId');
         $navboxId.toggleClass('navbox_hidden_hight');
 
         if($navboxId.hasClass('navbox_hidden_hight')){
             $navboxId.animate({height:"100%"},500);
+            $('.navbox_menu').animate({opacity:1},400);
+            $('.navbox_menu').removeClass('d-none');
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
+                $('.navbox_menu').addClass('d-none');
                 $navboxId.removeAttr("style");
             });
+            $('.navbox_menu').animate({opacity:0},400);
             document.documentElement.style.overflowY = 'scroll'; 
         }
     });

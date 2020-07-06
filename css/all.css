@@ -91,8 +91,23 @@ body, html {
 }
 
 .navbox_hidden {
-  background-color: #000;
+  background-color: #ffffff;
   height: 100%;
+}
+
+.navbox_menu {
+  font-size: 1.0625rem;
+  color: #34373D;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.navbox_menu li {
+  margin-bottom: 2rem;
+}
+
+.navbox_menu li:last-child {
+  margin-top: 0px;
 }
 
 .footer_box {

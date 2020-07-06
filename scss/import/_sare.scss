@@ -62,10 +62,22 @@ body,html{
     }
     &_hidden{
         // display: none;
-        background-color: #000;
+        background-color: $page-bg-color;
         height: 100%;
         &_hight{
             // height: 100%;
+        }
+    }
+    &_menu{
+        font-size: 1.0625rem;//17px
+        color: $color-txt;
+        font-weight: bold;
+        opacity: 0;
+        li{
+           margin-bottom: 2rem;//32px
+           &:last-child{
+               margin-top: 0px;
+           } 
         }
     }
 }
