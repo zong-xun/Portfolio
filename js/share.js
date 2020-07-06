@@ -21,6 +21,7 @@ $(function () {
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
             document.body.addEventListener('touchmove', function(event) {
+                alert('1111111')
                 event.preventDefault();
             }, false); 
             document.documentElement.style.overflowY = 'hidden'; 
