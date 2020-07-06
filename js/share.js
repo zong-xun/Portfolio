@@ -24,7 +24,6 @@ $(function () {
             //     event.preventDefault();
             // }, true); 
             $('.content_box').on('touchmove', function(event) {
-                alert('1111')
                 event.preventDefault();
             });
             document.documentElement.style.overflowY = 'hidden'; 
