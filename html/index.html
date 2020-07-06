@@ -15,16 +15,20 @@
     <!-- content1 -->
     <div class="content_box">
         <!-- navbox -->
-        <nav class="navbox_box d-flex align-items-center justify-content-between">
-            <div class="navbox_log">
-                <img src="../image/logo.svg" alt="">
+        <div id="navboxId" class="navbox">
+            <nav class="navbox_box d-flex align-items-center justify-content-between js-navbox">
+                <div class="navbox_log">
+                    <img src="../image/logo.svg" alt="">
+                </div>
+                <div class="navbox_hamburger js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <div class="navbox_hidden js-navbox_hidden">
             </div>
-            <div class="navbox_hamburger js-hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
+        </div>
         <div class="content_pageone">
             <!-- 首頁第一頁 -->
             <div class="content_pageone_box">
@@ -97,25 +101,7 @@
         </footer>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script>
-        $(function () {
-
-            $('.js-hamburger').on('click', function () {
-                let $that = $(this);
-                if ($that.hasClass('navbox_hamburger_action')) {
-                    $that.removeClass('navbox_hamburger_action');
-                } else {
-                    $that.addClass('navbox_hamburger_action');
-                }
-            });
-
-            $('#page-down').click(function () {
-                $('html,body').animate({ scrollTop: $('#first-block').offset().top }, 800);
-            });
-
-
-        })
-    </script>
+    <script src="../js/share.js"></script>
 </body>
 
 </html>
