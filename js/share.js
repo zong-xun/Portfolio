@@ -29,7 +29,7 @@ $(function () {
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
-                $('.navbox_menu').addClass('d-none');
+                $('.js-navbox_hidden').addClass('d-none');
                 $navboxId.removeAttr("style");
             });
             $('.navbox_menu').animate({opacity:0},400);
