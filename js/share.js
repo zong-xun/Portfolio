@@ -20,6 +20,9 @@ $(function () {
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
+            document.addEventListener("touchmove", function(event) {
+                event.preventDefault() //不產生作用
+            }, {passive: true});
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
@@ -27,13 +30,12 @@ $(function () {
                 $navboxId.removeAttr("style");
             });
             $('.navbox_menu').animate({opacity:0},400);
-            document.documentElement.style.overflowY = 'scroll'; 
+            document.documentElement.style.overflowY = 'scroll';
         }
     });
 
     $('#page-down').click(function () {
         $('html,body').animate({ scrollTop: $('#first-block').offset().top }, 800);
     });
-
 
 })
