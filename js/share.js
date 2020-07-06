@@ -22,7 +22,7 @@ $(function () {
             $('.navbox_menu').removeClass('d-none');
             document.body.addEventListener('touchmove', function(event) {
                 event.preventDefault();
-            }, false); 
+            }, true); 
             document.documentElement.style.overflowY = 'hidden'; 
         }else{
             $navboxId.animate({height:"10%"},500,function(){
