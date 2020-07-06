@@ -15,9 +15,9 @@ $(function () {
         e.preventDefault();
     }
 // 防止下拉 
-touchmove= () => { document.getElementsByClassName('content_box').addEventListener('touchmove', handler, false)  }
+touchmove= () => { document.getElementsByClassName('js-navbox_hidden').addEventListener('touchmove', handler, false)  }
 // 移除监听，恢复下拉 
-untouchmove = () => { document.getElementsByClassName('content_box').removeEventListener('touchmove', handler, false)  }
+untouchmove = () => { document.getElementsByClassName('js-navbox_hidden').removeEventListener('touchmove', handler, false)  }
 
 
     //控制menu
@@ -29,7 +29,12 @@ untouchmove = () => { document.getElementsByClassName('content_box').removeEvent
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},400);
             $('.navbox_menu').removeClass('d-none');
-            touchmove();
+            
+            $(".js-navbox_hidden").on(' touchstart',function(){    
+                $(".js-navbox_hidden").on('touchmove',function(event) {    
+                    event.preventDefault();     
+                }, false);
+            });
             // document.body.addEventListener('touchmove', function(event) {
             //     event.preventDefault();
             // }, true); 
@@ -43,7 +48,10 @@ untouchmove = () => { document.getElementsByClassName('content_box').removeEvent
                 $navboxId.removeAttr("style");
             });
             $('.navbox_menu').animate({opacity:0},400);
-            untouchmove();
+
+            $(".js-navbox_hidden").on(' touchend',function(){    
+                $(".js-navbox_hidden").unbind('touchmove');
+            });
             // $('.content_box').on('touchmove', function(event) {
             //     event.returnValue = true;
             // });
