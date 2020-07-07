@@ -11,7 +11,31 @@ body,html{
     transition: all 0.5s;
 }
 .navbox{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color:$page-bg-color;
+    z-index: 1000;
+    opacity: 1;
+    // transition: all 0.3s;
+    &_position{
+        opacity: 0;
+
+        transition: all 0.3s;
+        &_opacity1{
+            opacity: 1;
+            height: 4.0625rem;//65px
+            position: fixed;
+            transition: all 0.5s;
+
+        }
+        &_opacity0{
+            opacity: 0;
+            height: 3.125rem;//50px
+            position: relative;
+            transition: all 0.5s;
+
+        }
+    }
     &_box{
         width: 100%;
         height: 65px;
@@ -19,6 +43,7 @@ body,html{
         box-shadow:0 3px 6px $color-shadow;
         position: relative;
         z-index: 1001;
+        opacity: 1;
     }
     &_log{
         width: 89px;
@@ -31,6 +56,7 @@ body,html{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        cursor: pointer;
         div{
             width: 100%;
             height: 3px;
@@ -79,6 +105,11 @@ body,html{
                margin-top: 0px;
            } 
         }
+    }
+    &-hide-height{
+        width: 100%;
+        height: 65px;
+ 
     }
 }
 .footer{

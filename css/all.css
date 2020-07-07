@@ -28,7 +28,33 @@ body, html {
 }
 
 .navbox {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.navbox_position {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbox_position_opacity1 {
+  opacity: 1;
+  height: 4.0625rem;
+  position: fixed;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbox_position_opacity0 {
+  opacity: 0;
+  height: 3.125rem;
   position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbox_box {
@@ -39,6 +65,7 @@ body, html {
           box-shadow: 0 3px 6px #0000002F;
   position: relative;
   z-index: 1001;
+  opacity: 1;
 }
 
 .navbox_log {
@@ -58,6 +85,7 @@ body, html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  cursor: pointer;
 }
 
 .navbox_hamburger div {
@@ -108,6 +136,11 @@ body, html {
 
 .navbox_menu li:last-child {
   margin-top: 0px;
+}
+
+.navbox-hide-height {
+  width: 100%;
+  height: 65px;
 }
 
 .footer_box {
