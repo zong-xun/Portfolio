@@ -33,6 +33,8 @@ body, html {
   background-color: #ffffff;
   z-index: 1000;
   opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbox_position {
@@ -66,6 +68,8 @@ body, html {
   position: relative;
   z-index: 1001;
   opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbox_log {
