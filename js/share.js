@@ -21,7 +21,7 @@ $(function () {
 
         if($navboxId.hasClass('navbox_hidden_hight')){
             if(after == 0){
-                $('.navbox-hide-height').animate({height:"100%"},200);
+                // $('.navbox-hide-height').animate({height:"100%"},200);
             };
             
             $navboxId.animate({height:"100%"},500);
@@ -38,7 +38,7 @@ $(function () {
         }else{
 
             if(after == 0){
-                $('.navbox-hide-height').animate({height:"65px"},200);
+                // $('.navbox-hide-height').animate({height:"65px"},200);
             }
             
             $navboxId.animate({height:"15%"},500,function(){
