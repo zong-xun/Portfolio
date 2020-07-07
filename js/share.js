@@ -70,10 +70,12 @@ $(function () {
             $('.js-navbox').addClass("navbox_position_opacity0");
             $('.js-navbox').removeClass("navbox_position_opacity1");
             $('.navbox').addClass('navbox_position');
+            if(befort == 0){
+                $('.navbox').removeClass('navbox_position');
+            }
         }else{
             // $('.js-navbox').animate({opacity:"0"},"400");
             $('.navbox').removeClass('navbox_position');
-            
             $('.js-navbox').removeClass('navbox_position_opacity0');
             $('.js-navbox').addClass("navbox_position_opacity1");
         }
