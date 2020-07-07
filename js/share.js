@@ -21,8 +21,9 @@ $(function () {
 
         if($navboxId.hasClass('navbox_hidden_hight')){
             if(after == 0){
-                $('.navbox-hide-height').animate({height:"100%"},500);
-            }
+                $('.navbox-hide-height').animate({height:"100%"},200);
+            };
+            
             $navboxId.animate({height:"100%"},500);
             $('.navbox_menu').animate({opacity:1},300,()=>{
                 $('.navbox_menu').removeClass('d-none');
@@ -37,7 +38,7 @@ $(function () {
         }else{
 
             if(after == 0){
-                $('.navbox-hide-height').animate({height:"65px"},500);
+                $('.navbox-hide-height').animate({height:"65px"},200);
             }
             $navboxId.animate({height:"15%"},500,function(){
                 $('.navbox_menu').addClass('d-none');
