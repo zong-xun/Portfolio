@@ -40,6 +40,7 @@ $(function () {
             if(after == 0){
                 $('.navbox-hide-height').animate({height:"65px"},200);
             }
+            
             $navboxId.animate({height:"15%"},500,function(){
                 $('.navbox_menu').addClass('d-none');
                 $navboxId.removeAttr("style");
@@ -68,9 +69,11 @@ $(function () {
         befort = after;
         if(scolltype == 'down'){
             // $('.js-navbox').animate({opacity:"1"},"400");
-            $('.js-navbox').addClass("navbox_position_opacity0");
-            $('.js-navbox').removeClass("navbox_position_opacity1");
-            $('.navbox').addClass('navbox_position');
+            if(befort >= 200){
+                $('.js-navbox').addClass("navbox_position_opacity0");
+                $('.js-navbox').removeClass("navbox_position_opacity1");
+                $('.navbox').addClass('navbox_position');
+            }
             if(befort == 0){
                 $('.navbox').removeClass('navbox_position');
             }
