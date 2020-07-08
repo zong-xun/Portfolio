@@ -90,17 +90,21 @@ body,html{
         // display: none;
         background-color: $page-bg-color;
         height: 100%;
-        &_hight{
-            // height: 100%;
-        }
+
     }
     &_menu{
-        font-size: 1.0625rem;//17px
+        font-size: 1.5625rem;//25px
         color: $color-txt;
         font-weight: bold;
         opacity: 0;
         li{
-           margin-bottom: 2rem;//32px
+           margin-bottom: 2.8125rem;//45px
+           cursor: pointer;
+           a{
+                text-decoration:none;
+                color:$color-txt ;
+
+           }
            &:last-child{
                margin-top: 0px;
            } 

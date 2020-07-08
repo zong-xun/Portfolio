@@ -126,14 +126,20 @@ body, html {
 }
 
 .navbox_menu {
-  font-size: 1.0625rem;
+  font-size: 1.5625rem;
   color: #34373D;
   font-weight: bold;
   opacity: 0;
 }
 
 .navbox_menu li {
-  margin-bottom: 2rem;
+  margin-bottom: 2.8125rem;
+  cursor: pointer;
+}
+
+.navbox_menu li a {
+  text-decoration: none;
+  color: #34373D;
 }
 
 .navbox_menu li:last-child {
