@@ -153,6 +153,7 @@ body, html {
 
 .footer_box {
   margin-bottom: 1.125rem;
+  margin-top: .625rem;
   text-align: center;
   font-size: .5625rem;
 }
