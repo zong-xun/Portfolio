@@ -59,7 +59,7 @@ $(function () {
             //控制mobile 滾動開啟
             $('#navboxId').on('touchmove', function(event) {
             });
-            
+
             //關閉模態框時釋放document.scroll事件
             $(document).unbind("scroll");
             // document.documentElement.style.overflowY = 'scroll';
@@ -76,8 +76,6 @@ $(function () {
         let differh = after - befort;
         var height = window.screen.availHeight;
         var h = document.documentElement.scrollTop;
-        console.log(height);
-        console.log(h)
         if(differh == 0){
             return false;
         }
@@ -89,6 +87,7 @@ $(function () {
                 $('.js-navbox').addClass("navbox_position_opacity0");
                 $('.js-navbox').removeClass("navbox_position_opacity1");
                 $('.navbox').addClass('navbox_position');
+                $('.page_top').removeClass('d-none');
             }
             if(befort == 0){
                 $('.navbox').removeClass('navbox_position');
@@ -98,7 +97,16 @@ $(function () {
             $('.navbox').removeClass('navbox_position');
             $('.js-navbox').removeClass('navbox_position_opacity0');
             $('.js-navbox').addClass("navbox_position_opacity1");
+            if(after == 0){
+                $('.page_top').addClass('d-none');
+            }
         }
-    })
+    });
+
+
+    //置頂
+    $('.page_top').click(function(){ 
+		$('html,body').animate({scrollTop:0}, "slow");
+	});
 
 })

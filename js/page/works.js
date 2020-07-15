@@ -1,5 +1,4 @@
 $(()=>{
-    //圖片動態塞入
     
     //圖片data
     let $ImgDataObj =[
@@ -46,6 +45,7 @@ $(()=>{
     ];
     let $Imgbox = $('.js-imgbox');
     let $imgboxStr = '';
+    //動態塞入DATA
     $.map($ImgDataObj,function(item,index){
         $imgboxStr += `
             <div class="content_imgbox">

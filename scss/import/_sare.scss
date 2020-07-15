@@ -116,6 +116,7 @@ body,html{
  
     }
 }
+//
 .footer{
     &_box{
         margin-bottom: 1.125rem;//18px
@@ -123,4 +124,16 @@ body,html{
         text-align: center;
         font-size: .5625rem;//9px
     }
+}
+
+// 至頂
+.page_top{
+    background-image: url(../image/go_to_top.svg);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    width: 46px;
+    height: 46px;
+    position:fixed;
+    bottom: 13px;
+    right: 20px;
 }
