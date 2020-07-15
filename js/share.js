@@ -34,7 +34,7 @@ $(function () {
             $('#navboxId').on('touchmove', function(event) {
                 event.preventDefault();
             });
-            document.documentElement.style.overflowY = 'hidden'; 
+            // document.documentElement.style.overflowY = 'hidden'; 
         }else{
 
             if(after == 0){
@@ -50,7 +50,7 @@ $(function () {
             //控制mobile 滾動開啟
             $('#navboxId').on('touchmove', function(event) {
             });
-            document.documentElement.style.overflowY = 'scroll';
+            // document.documentElement.style.overflowY = 'scroll';
         }
     });
 
@@ -67,6 +67,8 @@ $(function () {
         }
         let scolltype = differh > 0 ?'down' :'up';
         befort = after;
+        console.log(scolltype);
+        console.log(befort);
         if(scolltype == 'down'){
             // $('.js-navbox').animate({opacity:"1"},"400");
             if(befort >= 200){

@@ -57,6 +57,7 @@
   margin-bottom: 2.625rem;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .content_imgbox img {
@@ -111,12 +112,29 @@
 }
 
 .content_imgtxt_title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #34373D;
 }
 
 .content_imgtxt_title_small {
   font-size: .3125rem;
   color: #34373D;
+}
+
+.content_imgtxt_title_small_box {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.content_imgtxt_title_small_icon {
+  background-image: url(../image/works_btn-01.svg);
+  background-repeat: no-repeat;
+  min-width: 1.875rem;
+  margin-left: .625rem;
 }
 /*# sourceMappingURL=works.css.map */

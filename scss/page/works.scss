@@ -44,6 +44,7 @@
         // margin: 0 0.75rem;//12px
         cursor: pointer;
         position: relative;
+        overflow: hidden;
         img{
             max-width: 100%;
             width: 100%;
@@ -87,11 +88,24 @@
             margin:0 .4375rem 0 .625rem;//7px 10px
         }
         &_title{
-            font-size: 1.5rem;//24px
+            font-size: 1.2rem;
             color: $color-txt;
             &_small{
                 font-size: .3125rem;//5px
                 color: $color-txt;
+                &_box{
+                    align-self: center;
+                    display: flex;
+                    margin-top: 15px;
+                    margin-right: 10px;
+                }
+                &_icon{
+                    background-image: url(../image/works_btn-01.svg);
+                    background-repeat: no-repeat;
+                    min-width: 1.875rem;//30px
+                    // min-height: .3125rem;//5px
+                    margin-left: .625rem;//10px
+                }
             }
         }
     }
