@@ -74,8 +74,9 @@
         justify-content: space-between;
         transition: all 0.5s;
         &_box{
-            max-width: 200px;
+            max-width: 60%;
             word-break: break-all;
+            line-height: 1.5;
             padding: 10px 0;
         }
         &_icon{

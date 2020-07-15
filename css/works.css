@@ -98,8 +98,9 @@
 }
 
 .content_imgtxt_box {
-  max-width: 200px;
+  max-width: 60%;
   word-break: break-all;
+  line-height: 1.5;
   padding: 10px 0;
 }
 
