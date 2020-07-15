@@ -30,9 +30,18 @@ $(function () {
             });
             
 
-            //控制mobile 滾動關必
+            //控制mobile 滾動關閉
             $('#navboxId').on('touchmove', function(event) {
                 event.preventDefault();
+            });
+
+            //取當前頁面滾動的距離
+            var tops = $(document).scrollTop();
+            //當頁面滾動時，把當前距離賦值給頁面，這樣保持頁面滾動條不動
+            $(document).bind("scroll",function (){
+
+                $(document).scrollTop(tops);
+                
             });
             // document.documentElement.style.overflowY = 'hidden'; 
         }else{
@@ -50,6 +59,9 @@ $(function () {
             //控制mobile 滾動開啟
             $('#navboxId').on('touchmove', function(event) {
             });
+            
+            //關閉模態框時釋放document.scroll事件
+            $(document).unbind("scroll");
             // document.documentElement.style.overflowY = 'scroll';
         }
     });
@@ -62,13 +74,15 @@ $(function () {
     $(window).on('scroll',()=>{
         let after = $(window).scrollTop();
         let differh = after - befort;
+        var height = window.screen.availHeight;
+        var h = document.documentElement.scrollTop;
+        console.log(height);
+        console.log(h)
         if(differh == 0){
             return false;
         }
         let scolltype = differh > 0 ?'down' :'up';
         befort = after;
-        console.log(scolltype);
-        console.log(befort);
         if(scolltype == 'down'){
             // $('.js-navbox').animate({opacity:"1"},"400");
             if(befort >= 200){
